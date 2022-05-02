@@ -34,16 +34,16 @@ const sellVase = toSellOrNotToSell (firedVase)
 console.log(sellMug, sellCup, sellPlate, sellBowl, sellVase)
 
 // storing the array of sellable items by calling the function 
-// const sellablePottery = usePottery()
+const sellablePottery = usePottery()
 // console.log(sellablePottery)
 
 
 // Invoke the component function that renders the HTML list
-// const potteryHTML = PotteryList(sellablePottery)
-// console.log(potteryHTML)
+const potteryHTML = PotteryList(sellablePottery)
+console.log(potteryHTML)
 
 const parentHTMLElement = document.querySelector(".potteryList")
 
 
-parentHTMLElement.innerHTML = PotteryList(usePottery())
+parentHTMLElement.innerHTML = PotteryList()
 
