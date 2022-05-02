@@ -12,6 +12,8 @@ const cup = makePottery("cup", 2, 8)
 const plate = makePottery("plate", 5, 1)
 const bowl = makePottery("bowl", 8, 4)
 const vase = makePottery("vase", 10, 18)
+const table = makePottery("table", 40, 15)
+const chair = makePottery("chair", 25, 21)
 
 console.log(mug, cup, plate, bowl, vase)
 
@@ -21,6 +23,8 @@ const firedCup = firePottery(cup, 2300)
 const firedPlate = firePottery(plate, 2500)
 const firedBowl = firePottery(bowl, 2100)
 const firedVase = firePottery(vase, 2200)
+const firedTable = firePottery(table, 2000)
+const firedChair = firePottery(chair, 2100)
 
 console.log(firedMug, firedCup, firedPlate, firedBowl, firedVase )
 
@@ -30,6 +34,8 @@ const sellCup = toSellOrNotToSell (firedCup)
 const sellPlate = toSellOrNotToSell (firedPlate)
 const sellBowl = toSellOrNotToSell (firedBowl)
 const sellVase = toSellOrNotToSell (firedVase)
+const sellTable = toSellOrNotToSell (firedTable)
+const sellChair = toSellOrNotToSell (firedChair)
 
 console.log(sellMug, sellCup, sellPlate, sellBowl, sellVase)
 
@@ -39,8 +45,8 @@ const sellablePottery = usePottery()
 
 
 // Invoke the component function that renders the HTML list
-const potteryHTML = PotteryList(sellablePottery)
-console.log(potteryHTML)
+// const potteryHTML = PotteryList(sellablePottery)
+// console.log(potteryHTML)
 
 const parentHTMLElement = document.querySelector(".potteryList")
 

@@ -1,5 +1,6 @@
 // defining a function to create a dynamic Html string
 // function is only displaying sellable pottery items in the array
+// used the function that imported the array in the html string function to pull the data
 
 import { usePottery } from "./PotteryCatalog.js"
 
